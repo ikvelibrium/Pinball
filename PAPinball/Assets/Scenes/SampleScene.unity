@@ -440,8 +440,8 @@ HingeJoint:
   m_GameObject: {fileID: 315854378}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0.5000013, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
+  m_Anchor: {x: 0.49, y: 0.5000013, z: 0}
+  m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   m_UseSpring: 0
@@ -457,7 +457,7 @@ HingeJoint:
   m_UseLimits: 0
   m_Limits:
     min: 0
-    max: 0
+    max: 150
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -2097,8 +2097,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669956931}
   m_LocalRotation: {x: -0, y: -0.13052596, z: -0, w: 0.99144495}
-  m_LocalPosition: {x: -3, y: 5.4302, z: -4.73}
-  m_LocalScale: {x: 3.3163, y: 0.4659672, z: 0.3744262}
+  m_LocalPosition: {x: -2.93, y: 5.43, z: -4.67}
+  m_LocalScale: {x: 3.4618855, y: 0.4659672, z: 0.3744262}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 428202271}
@@ -2190,8 +2190,8 @@ HingeJoint:
   m_GameObject: {fileID: 1669956931}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0.5000013, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
+  m_Anchor: {x: -0.46, y: 0.5000013, z: 0}
+  m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   m_UseSpring: 0
@@ -2207,7 +2207,7 @@ HingeJoint:
   m_UseLimits: 0
   m_Limits:
     min: 0
-    max: 0
+    max: 150
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
