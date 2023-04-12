@@ -5,37 +5,37 @@ using UnityEngine;
 public class Flipers : MonoBehaviour
 {
 
-    [SerializeField] private float _restPosition;
-    [SerializeField] private float _pressedPOsition;
-    [SerializeField] private float _hitStrenght;
-    [SerializeField] private float _flipperDamper;
-    HingeJoint hinge;
-    public string inputName;
+    [SerializeField] private KeyCode key;
+    [SerializeField] private float _onPressedPosition = 45f;
+
+    private float _startPosition = 0f;
+    private float _strenght = 10000f;
+    private float _damper = 150f;
+    private HingeJoint _hinge;
 
     void Start()
     {
-        hinge = GetComponent<HingeJoint>();
-        hinge.useSpring = true;
+        _hinge = GetComponent<HingeJoint>();
+        _hinge.useSpring = true;
     }
 
     void Update()
     {
         JointSpring spring = new JointSpring();
-        spring.spring = _hitStrenght;
-        spring.damper = _flipperDamper;
+        spring.spring = _strenght;
+        spring.damper = _damper;
 
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(key))
         {
-            Debug.Log("a");
-            spring.targetPosition = _pressedPOsition;
+            spring.targetPosition = _onPressedPosition;
         }
         else
         {
-            //spring.targetPosition = _restPosition;
+            spring.targetPosition = _startPosition;
         }
 
-        hinge.spring = spring;
-        hinge.useLimits = true;
+        _hinge.spring = spring;
+        _hinge.useLimits = true;
     }
 }
 

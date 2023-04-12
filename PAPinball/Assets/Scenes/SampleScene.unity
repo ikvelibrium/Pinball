@@ -347,8 +347,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315854378}
   m_LocalRotation: {x: -0, y: 0.13052598, z: -0, w: 0.9914449}
-  m_LocalPosition: {x: 1.56, y: 5.35, z: -4.67}
-  m_LocalScale: {x: 3.3163, y: 0.6263, z: 0.3744262}
+  m_LocalPosition: {x: 1.56, y: 5.4297, z: -4.67}
+  m_LocalScale: {x: 3.3163, y: 0.46690664, z: 0.3744262}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 428202271}
@@ -429,11 +429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484379ad2b9991c4b9d184d4da9a6725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _restPosition: 0
-  _pressedPOsition: 45
-  _hitStrenght: 1000
-  _flipperDamper: 150
-  inputName: Q
+  key: 122
+  _onPressedPosition: 45
 --- !u!59 &315854384
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -451,7 +448,7 @@ HingeJoint:
   m_Spring:
     spring: 0
     damper: 0
-    targetPosition: 150
+    targetPosition: 0
   m_UseMotor: 0
   m_Motor:
     targetVelocity: 0
@@ -2100,8 +2097,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669956931}
   m_LocalRotation: {x: -0, y: -0.13052596, z: -0, w: 0.99144495}
-  m_LocalPosition: {x: -3, y: 5.35, z: -4.73}
-  m_LocalScale: {x: 3.3163, y: 0.6263, z: 0.3744262}
+  m_LocalPosition: {x: -3, y: 5.4302, z: -4.73}
+  m_LocalScale: {x: 3.3163, y: 0.4659672, z: 0.3744262}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 428202271}
@@ -2182,11 +2179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484379ad2b9991c4b9d184d4da9a6725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _restPosition: 0
-  _pressedPOsition: 45
-  _hitStrenght: 1000
-  _flipperDamper: 150
-  inputName: E
+  key: 120
+  _onPressedPosition: 45
 --- !u!59 &1669956937
 HingeJoint:
   m_ObjectHideFlags: 0
