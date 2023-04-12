@@ -9,7 +9,7 @@ public class Batutes : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
         {
-            Debug.Log("asdasd");
+            
             Vector3 ballOldDirection = transform.position - collision.gameObject.transform.position;
             float dist = ballOldDirection.magnitude;
             Vector3 ballNewDirection = ballOldDirection / dist;
