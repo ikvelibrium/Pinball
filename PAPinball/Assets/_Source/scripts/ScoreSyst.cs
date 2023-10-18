@@ -16,10 +16,13 @@ public class ScoreSyst : MonoBehaviour
     {
         if(collision.gameObject.layer == 8)
         {
-            _score += _pointsPerJump;
-            Debug.Log("sdsd");
+            PlusScore(_pointsPerJump);
         }
     }
 
+    public void PlusScore(float score)
+    {
+        _score += score;
+    }
 
 }
