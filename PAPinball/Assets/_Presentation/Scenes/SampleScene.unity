@@ -484,7 +484,9 @@ MonoBehaviour:
   - {fileID: 1605209541}
   - {fileID: 2057533455}
   _spawnedBonuses: 
-  _smallBonusPref: {fileID: 5378492181480062570, guid: 214e8eab8cf68564d8a883c8a61d1e92, type: 3}
+  _prefs:
+  - {fileID: 5378492181480062570, guid: 214e8eab8cf68564d8a883c8a61d1e92, type: 3}
+  - {fileID: 3803716428032346831, guid: 9f753addce865d449985ed89fbbecaf2, type: 3}
   bonusSpawnInSecMin: 10
   bonusSpawnInSecMax: 40
 --- !u!4 &317311238
