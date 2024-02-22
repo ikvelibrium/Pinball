@@ -9,12 +9,24 @@ public class BonusSpawner : MonoBehaviour
     [SerializeField] List<GameObject> _prefs = new List<GameObject>();
     [SerializeField] private float bonusSpawnInSecMin;
     [SerializeField] private float bonusSpawnInSecMax;
+    Dictionary<string, object> aaa = new Dictionary<string, object>();
     private float _actualBonusSpawnInSec;
     private bool _spawendFirstOne = false;
+
+
+    
+
+
     private void Start()
     {
+        aaa.Add("a",1);
+        aaa.Add("b",2);
+        aaa.Add("c",3);
         _actualBonusSpawnInSec = Random.Range(bonusSpawnInSecMin, bonusSpawnInSecMax);
         Debug.Log(_actualBonusSpawnInSec);
+
+        
+        
     }
 
     private void Update()
@@ -22,7 +34,7 @@ public class BonusSpawner : MonoBehaviour
         _actualBonusSpawnInSec -= Time.deltaTime;
         if (_actualBonusSpawnInSec <= 0)
         {
-            Debug.Log("dssd");
+            
             int a = Random.Range(0, _bonusesSpawnPoints.Count);
             if (_spawendFirstOne == false)
             {
@@ -40,6 +52,7 @@ public class BonusSpawner : MonoBehaviour
                         Instantiate(_prefs[Random.Range(0, _prefs.Count)], _bonusesSpawnPoints[a]);
                         _spawnedBonuses.Add(a);
                         _actualBonusSpawnInSec = Random.Range(bonusSpawnInSecMin, bonusSpawnInSecMax);
+                        AppMetrica.Instance.ReportEvent("a",aaa);
                     }
                 }
             }

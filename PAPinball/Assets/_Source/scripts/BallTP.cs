@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
 public class BallTP : MonoBehaviour
 {
     [SerializeField] private Transform _tpPoint;
@@ -18,6 +19,7 @@ public class BallTP : MonoBehaviour
         
         if (collision.gameObject.layer == 6 && _ballsAmount > 0)
         {
+            AppMetrica.Instance.ReportEvent("ballTP");
             _ballsAmount--;
             collision.gameObject.transform.position = _tpPoint.position;
         } else if(collision.gameObject.layer == 6 && _ballsAmount <= 0)

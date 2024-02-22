@@ -17,6 +17,11 @@ public class Flipers : MonoBehaviour
     {
         _hinge = GetComponent<HingeJoint>();
         _hinge.useSpring = true;
+        AppMetrica.Instance.ReportEvent("1");
+        AppMetrica.Instance.ReportEvent("2");
+        AppMetrica.Instance.ReportEvent("3");
+        AppMetrica.Instance.ReportEvent("4");
+        AppMetrica.Instance.ReportEvent("5");
     }
 
     void Update()
